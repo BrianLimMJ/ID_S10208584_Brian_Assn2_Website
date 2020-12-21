@@ -1,0 +1,24 @@
+
+.nav-link{
+    font-size: 16px;
+}
+.image-container{
+    background-image: url("Images/lb.jpg");
+    height: 700px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+footer{
+    border-style: outset;
+    border-color: #FFFFFF;
+    background-color: #F5F5F5;
+    margin-top: 1px;
+}
+footer .footer-text{
+    font-size: 12px;
+    color: #000000;
+    margin-top: 5px;
+    font-family: Arial, Helvetica, sans-serif; 
+    text-align: center;
+}
