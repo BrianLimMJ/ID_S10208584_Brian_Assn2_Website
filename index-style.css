@@ -7,6 +7,9 @@
     margin: auto;
     padding: 3px;
 }
+.navbar-text{
+    font-size: 18px;
+}
 .image-container{
     background-image: url("Images/lb.jpg");
     height: 700px;
@@ -17,7 +20,7 @@
 .text-container{
     background-color: #FFFFFF;
     text-align: center;
-    opacity: 80%;
+    opacity: 90%;
     position: relative;
     width: 20%;
     margin:auto;

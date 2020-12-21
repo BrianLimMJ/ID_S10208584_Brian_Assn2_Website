@@ -7,6 +7,9 @@
     margin: auto;
     padding: 3px;
 }
+.navbar-text{
+    font-size: 18px;
+}
 .image-container{
     background-image: url("Images/lb.jpg");
     height: 700px;
@@ -14,28 +17,18 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
-.text-container{
+.input{
     background-color: #FFFFFF;
     text-align: center;
-    opacity: 80%;
+    opacity: 85%;
     position: relative;
     width: 20%;
+    height: 15%;
     margin:auto;
-    top: 30%;
-    bottom: 50%;
-    right: 0%;
-    left: 0%;  
+    top: 5%;
 }
-.begin-button{
-    text-align: center;
-    position: relative;
-    width: 8%;
-    margin:auto;
-    top: 32%;
-    bottom: 50%;
-    right: 0%;
-    left: 0%; 
-}
+
+
 footer{
     border-style: outset;
     border-color: #FFFFFF;
