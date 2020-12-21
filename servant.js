@@ -10,19 +10,29 @@ fetch (url)
         
     });
 
-setTimeout(getServant,500);
 
+document.getElementById("btn").addEventListener("click", function getServant(){
+    let searchName = document.getElementById('Sname');
 
-
-function getServant(){
-    var servantName = document.getElementById('Sname').value;
-    
-    for (i = 0; i<ServantList.length;i++)
+    for (i = 0;i<ServantList.length;i++)
     {
-        if (servantName == ServantList[i]['name'])
-        {
-            console.log(ServantList[i]['className']);
-        }
-        
+        fetch (url)
+        .then(res => res.json())
+        .then(data = ServantList[i]['name'])
+        setTimeout(checking(data,searchName),50); 
     }
-}
+
+    function checking(data,searchName)
+    {
+        if (data == searchName)
+        {
+            console.log('Successful' + data);
+        }
+        else 
+        {
+            console.log('Failure name not found');
+        }
+    }
+});
+
+
