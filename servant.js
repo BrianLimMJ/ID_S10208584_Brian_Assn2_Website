@@ -32,15 +32,21 @@ document.getElementById("btn").addEventListener("click", function getServant(){
         {
             break;
         }
+        
+        
     }
 
     function checking(data,searchName)
     {
-        if (data == searchName) 
+    
+        var patt = new RegExp(searchName);
+        if (patt.test(data))
         {
             var sName = data;
             
-            console.log('Servant: '+ sName +
+            ; 
+            
+            setTimeout(console.log('Servant: '+ sName +
             '\n'+ 'Gender: '+ sGender + 
             '\n'+ 'Class: '+ sClass + 
             '\n'+ 'Rarity: '+ sRarity + 
@@ -48,13 +54,23 @@ document.getElementById("btn").addEventListener("click", function getServant(){
             '\n'+ 'Base Atk: '+ sAtkBase + 
             '\n'+ 'Max Atk: '+ sAtkMax + 
             '\n'+ 'Base HP: '+ sHpBase + 
-            '\n'+ 'Max HP: '+ sHPMax );
+            '\n'+ 'Max HP: '+ sHPMax ),50);
+
+            setTimeout(alert('Servant: '+ sName +
+            '\n'+ 'Gender: '+ sGender + 
+            '\n'+ 'Class: '+ sClass + 
+            '\n'+ 'Rarity: '+ sRarity + 
+            '\n'+ 'Noble Phantasm: '+ sNP + 
+            '\n'+ 'Base Atk: '+ sAtkBase + 
+            '\n'+ 'Max Atk: '+ sAtkMax + 
+            '\n'+ 'Base HP: '+ sHpBase + 
+            '\n'+ 'Max HP: '+ sHPMax ),500);
             
         }
-        
         else 
         {
             console.log('Failure name not found');
+            
         }
         
     }
