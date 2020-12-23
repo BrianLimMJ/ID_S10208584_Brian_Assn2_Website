@@ -74,7 +74,7 @@ body{
 
 .card-shell{ 
     background-color: transparent;
-    height: 300px;
+    height: 330px;
     width: 250px;
     perspective: 1000px;
     
@@ -130,4 +130,18 @@ footer .footer-text{
     font-family: Arial, Helvetica, sans-serif; 
     text-align: center;
     
+}
+
+@media only screen and (max-width: 600px) {
+    .navbar-nav{
+        text-align: center;
+        margin: auto;
+    }
+    .navbar-brand{
+        padding: 0px;
+        margin: 0%;
+    }
+    .input{
+        width: 35%;
+    }
 }
