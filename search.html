@@ -33,16 +33,22 @@
   </header>
   <section class = "image-container">
     <div class = "input">
-        <form>
+        <form autocomplete="off">
             <div class="form-group">
                 <label for="Sname">Servant Name:</label>
-                <input type="text" class="form-control" id="name">
-                <button type="submit" id = 'btn' class="btn btn-default">Submit</button>
+                <input type="text" class="form-control" id="name" required>
+                <button type="button" id = 'btn' class="btn btn-default">Search</button>
+                <button type="button" id = 'remove' class="btn btn-default">Clear</button>
             </div>
             
         </form>
     </div>
-    
+    <div class = row>
+      <div id = 'sContainer'>
+
+      </div>
+      
+    </div>
   </section>
   
 

@@ -16,19 +16,107 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
 }
 .input{
     background-color: #FFFFFF;
     text-align: center;
-    opacity: 85%;
+    
     position: relative;
     width: 20%;
     height: 15%;
     margin:auto;
     top: 5%;
 }
+* {
+    box-sizing: border-box;
+  }
+  
+  .autocomplete {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .autocomplete-items {
+    position: absolute;
+    border: 1px solid #d4d4d4;
+    border-bottom: none;
+    border-top: none;
+    z-index: 99;
+    /*position the autocomplete items to be the same width as the container:*/
+    top: 100%;
+    left: 0;
+    right: 0;
+  }
+  
+  .autocomplete-items div {
+    padding: 10px;
+    cursor: pointer;
+    background-color: #fff; 
+    border-bottom: 1px solid #d4d4d4; 
+  }
+  
+  
+.row{
+    position: relative;
+    opacity: 85%;
+    margin-top: 50px;
+    
+}
+#sContainer{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: auto;
+    flex: 1,20%;
+    width: 75%;
+}
 
 
+.card-shell{ 
+    background-color: transparent;
+    height: 290px;
+    width: 250px;
+    perspective: 1000px;
+}
+
+.inside-cards{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;; 
+}
+.card-shell:hover .inside-cards {
+    transform: rotateY(180deg);
+  }
+.card-front, .card-back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+}
+
+.card-front{
+    width: 70%;
+    margin: auto;
+    
+}
+.card-back{
+background-color: #6495ED;
+  color: white;
+  transform: rotateY(180deg);
+}
+.image{
+    height: 290px;
+    width: 250px;
+}
+.card-back{
+    text-align: center;
+}
 
 footer{
     border-style: outset;
@@ -42,4 +130,5 @@ footer .footer-text{
     margin: auto;
     font-family: Arial, Helvetica, sans-serif; 
     text-align: center;
+    
 }
