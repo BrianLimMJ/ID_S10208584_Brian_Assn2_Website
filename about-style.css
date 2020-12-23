@@ -28,11 +28,16 @@ nav-link{
     margin:auto;
     margin-top: 60px;
 }
+.card{
+    margin: auto;
+    margin-top: 8px;
+    text-align: center;
+}
 footer{
     border-style: outset;
     border-color: #FFFFFF;
     background-color: #F5F5F5;
-    margin-top: 655px;
+    margin-top: 263px;
 }
 footer .footer-text{
     font-size: 14px;
