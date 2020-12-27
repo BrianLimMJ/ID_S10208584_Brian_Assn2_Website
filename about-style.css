@@ -28,17 +28,22 @@ nav-link{
     margin:auto;
     margin-top: 60px;
 }
+
+/* The container that holds all the content */
 .card{
     margin: auto;
     margin-top: 8px;
     text-align: center;
 }
+/* Footer*/
 footer{
     border-style: outset;
     border-color: #FFFFFF;
     background-color: #F5F5F5;
     margin-top: 263px;
 }
+
+/* Footer texts */
 footer .footer-text{
     font-size: 14px;
     color: #000000;
@@ -47,6 +52,8 @@ footer .footer-text{
     text-align: center;
     
 }   
+
+/* for mobile version 600px, it changes the items inside to fit an iphone */
 @media only screen and (max-width: 600px) {
     .navbar-nav{
         text-align: center;
