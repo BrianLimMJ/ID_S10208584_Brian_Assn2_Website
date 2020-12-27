@@ -19,6 +19,8 @@ body{
     background-attachment: fixed;
 }
 .image-container{}
+
+/* The input buttons */
 .input{
     background-color: #FFFFFF;
     text-align: center;
@@ -28,6 +30,7 @@ body{
     margin:auto;
     margin-top: 10px;
 }
+/* The auto complete css */
 * {
     box-sizing: border-box;
   }
@@ -57,11 +60,15 @@ body{
   }
   
   
+
+/* The row container that contains everything */
 .row{
     position: relative;
     opacity: 85%;
     margin-top: 50px;
 }
+
+/* The container that holds the contents */
 #sContainer{
     display: flex;
     flex-wrap: wrap;
@@ -72,6 +79,7 @@ body{
     width: 80%;
 }
 
+/* The flip card css */
 .card-shell{ 
     background-color: transparent;
     height: 330px;
@@ -116,13 +124,17 @@ background-color: #6495ED;
 .card-back{
     text-align: center;
 }
+/* Flip card css ends here */
 
+
+/* Footer*/
 footer{
     border-style: outset;
     border-color: #FFFFFF;
     background-color: #F5F5F5;
     margin-top: 543px;
 }
+/* Footer texts */
 footer .footer-text{
     font-size: 14px;
     color: #000000;
@@ -132,6 +144,7 @@ footer .footer-text{
     
 }
 
+/* for mobile version 600px, it changes the items inside to fit an iphone */
 @media only screen and (max-width: 600px) {
     .navbar-nav{
         text-align: center;
