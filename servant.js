@@ -20,6 +20,17 @@ fetch (url)
     }
     autocomplete(document.getElementById("name"), sList);
 
+// This is when the user clicks into the box and it will focus on the text box inside which
+// will focus and blur upon entering/leaving
+  $("#name").focus(function insideBox(){
+    $(this).css("background-color", "yellow");
+  });
+  $("#name").blur(function insideBox(){
+    $(this).css("background-color", "white");
+  });
+
+
+
 // This will get users input and display out all characters details based on input
 document.getElementById("btn").addEventListener("click", function getServant(){
     let searchName = document.getElementById('name').value;
@@ -32,17 +43,15 @@ document.getElementById("btn").addEventListener("click", function getServant(){
         {      
             break;
         } 
-        
+
         var sGender =ServantList[i]['gender']; 
         var sClass =ServantList[i]['className'];
         var sRarity =ServantList[i]['rarity']; 
-        var sNP =ServantList[i]['noblePhantasms'][0]['name']; 
-        var sAtkBase =ServantList[i]['atkBase'];
-        var sAtkMax =ServantList[i]['atkMax'];
-        var sHpBase =ServantList[i]['hpBase'];
+        var sNP =ServantList[i]['noblePhantasms'][0]['name'];  
+        var sAtkMax =ServantList[i]['atkMax']; 
         var sHPMax =ServantList[i]['hpMax'];
         var sAscenion = ServantList[i]['extraAssets']['charaGraph']['ascension'][4];  
-        setTimeout(checking(data,searchName),1000);
+        setTimeout(checking(data,searchName),50);
     }
     
 
@@ -53,12 +62,12 @@ document.getElementById("btn").addEventListener("click", function getServant(){
         var patt = new RegExp(searchName,"i");
         if (patt.test(sName))
         {
-            setTimeout(makeCard(sAscenion,sName,),1000);
+            setTimeout(makeCard(sAscenion,sName,sClass,sGender,sRarity,sNP,sAtkMax,sHPMax),50);
             function makeCard()
             {
                 let Card = document.createElement('card-container');
                 Card.innerHTML = "<div class = 'card-shell'><div class = 'inside-cards'>\
-                <div class = 'card-front'><img src = '"+sAscenion+"' class = 'image' loading = 'eager'></div>\
+                <div class = 'card-front'><img src = '"+sAscenion+"' class = 'image'></div>\
                 <div class = 'card-back'><h4>"+sName+"</h4>\
                 <p>"+'Class: ' +sClass+"</p>\
                 <p>"+'Gender: ' +sGender+"</p>\
