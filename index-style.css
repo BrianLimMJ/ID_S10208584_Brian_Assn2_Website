@@ -1,3 +1,16 @@
+/* This is the body image such that it will adjust to how much the page stretches */
+body{
+    background-image: url("Images/lb.png");
+    height: 700px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Quicksand', sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+
 /* This is the bootstrap nav bar*/
 
 /* This is the individual link fonts*/
@@ -16,15 +29,7 @@
 }
 /*  */
 
-/* This is the body image such that it will adjust to how much the page stretches */
-body{
-    background-image: url("Images/lb.jpg");
-    height: 700px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-}
+
 
 /* This is the big container that contains everything */
 .image-container{

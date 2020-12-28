@@ -1,3 +1,14 @@
+/* This is the body image such that it will adjust to how much the page stretches */
+body{
+    background-image: url("Images/lb.png");
+    height: 700px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Quicksand', sans-serif;
+}
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
 
 .nav-link{
     font-size: 16px;
@@ -10,15 +21,8 @@
 .navbar-text{
     font-size: 18px;
 }
-body{
-    background-image: url("Images/lb.jpg");
-    height: 700px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-}
-.image-container{}
+
+
 
 /* The input buttons */
 .input{
@@ -116,15 +120,15 @@ body{
 background-color: #6495ED;
   color: white;
   transform: rotateY(180deg);
+  text-align: center;
+  
 }
 .image{
     height: 300px;
     width: 250px;
     
 }
-.card-back{
-    text-align: center;
-}
+
 /* Flip card css ends here */
 
 
